@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Peacock Gap Golf Club</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	margin: 0;	
+}
+
+.feature-area .feature-image {
+	background-repeat: repeat;
+	background-position: center center;
+	background-size: cover;
+	min-height: 70%px;
+	height: 430px;
+	position: relative;
+}
+
+div {
+	display: block;
+}
+
+main.body_container {
+    padding: 60px 30px 0px;
+}
+
+body main nav.sub-nav ul li.heading {
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border-bottom: 1px solid #778086;
+	margin: 10px 0;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+body main nav.sub-nav ul li.level-1 {
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin: 10px 0;
+	padding: 0px 10px;	
+}
+
+body main nav.sub-nav ul li.level-1 a {
+	text-decoration: none;
+	color: #fff;
+	text-shadow: black 0px -1px 0px;
+}
+body main nav.sub-nav ul li.level-2 {
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 4px 0px 4px 20px;
+	text-indent: -1em;
+  line-height: 1.5;
+  padding-left: 40px;
+  text-decoration: none;
+	color: #fff;
+}
+
+ul li.level-2 a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.sub-nav{
+  width: 250px;
+  border: 5px solid #8ba9bf;
+  background-color: #8ba9bf;
+  text-decoration: none;
+	color: #fff;
+
+}
+
+.border-box {
+ margin: 0px;
+ padding: 5px;
+}
+.sub-nav ul {
+	border: 1px solid #778086;
+}
+
+.sub-nav ul {
+  background-color: #8ba9bf;
+  color: #fff;
+  display: block;
+  padding-left: 10px;
+  pading-right:10px;
+  text-decoration: none;
+  list-style: none;  
+}
+
+.sub-nav ul li.level-1 a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.sub-nav ul li.level-1 a .active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.sub-nav ul li.level-2 a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.column {
+	float: left;
+}
+
+.left {
+	width: 20%;
+}
+.right {
+	width: 80%;
+}
+
+.body_container after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.body_content_container {
+	width: 750px;
+  border: 5px solid #d5e7f2;
+  background-color: #d5e7f2;
+  text-decoration: none;
+	color: #fff;
+
+}
+.page_row {
+	padding: 10px 20px;
+	border: 1px solid #fff;	
+	color: #778086;
+}
+.heading_wrapper h1{
+font-size: 24px;
+line-height: 22px;
+letter-spacing: 2px;
+padding-bottom: 26px;
+border-bottom: 1px solid #fff;
+text-align: center;
+}
+
+.gallery_button h1{
+font-size: 24px;
+line-height: 22px;
+letter-spacing: 2px;
+padding-bottom: 26px;
+border-bottom: 1px solid #fff;
+text-align: center;
+}
+
+main {
+margin-right: auto; 
+margin-left: auto; 
+max-width:1160px; 
+}
+
+h3 {
+	text-align: center;
+	font-size: 20px;
+}
+
+h4 {
+	text-align: center;
+}
+
+.secnav {
+  overflow: hidden;
+  text-align: center;
+  float: none;
+  letter-spacing: 0.25px;
+}
+
+.secnav-1 a {
+	text-align: center;
+  
+  color: #778086;
+  padding: 5px 8px;
+  text-decoration: none;
+  display: inline-block;  
+}
+
+.secnav-2 a {
+	text-align: center;
+  color: #778086;
+  padding: 5px 8px;
+  text-decoration: none;
+  display: inline-block; 
+}
+
+.secnav :hover {
+  color: white;
+}
+
+.secnav-right {
+  float: right;
+}
+p {
+	letter-spacing: 1px;
+}
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 0px;
+	vertical-align: middle;
+	-webkit-filter: drop-shadow(5px 5px 5px #666666);
+  filter: drop-shadow(5px 5px 5px #666666);
+}
+
+.column_right_top {
+	padding: 0px 300px;
+}
+
+.column_right_bottom {
+	padding: 30px 300px;
+}
+
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0px;
+  }
+  .right {
+    width: 100%;
+  }
+
+  @media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.section-wrapper .container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.container {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.container .prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 6px 6px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 6px 0 0 6px;
+}
+</style>
+
+
+<title>Page Title</title>
+</head>
+
+<body>
+<header>
+<div class="feature-area">
+	<div class="feature-image" style="background-image:url('_MG_7567-Edit_JM2-edited.png')">
+</header>
+<main class="body_container">
+
+	<div class="column left">
+		<nav class="sub-nav">
+			<ul class="border-box">
+				<li class="heading">Golf Course Tours</li>
+				<li class="level-1"><a href="golf-course-tours-details.html">Lake Course</a></li>
+
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-1.html">Hole 1</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-2.html">Hole 2</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-3.html">Hole 3</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-4.html">Hole 4</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-5.html">Hole 5</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-6.html">Hole 6</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-7.html">Hole 7</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-8.html">Hole 8</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-9.html">Hole 9</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-10.html">Hole 10</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-11.html">Hole 11</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-12.html">Hole 12</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-13.html">Hole 13</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-14.html">Hole 14</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-15.html">Hole 15</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-16.html">Hole 16</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-17.html">Hole 17</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-18.html">Hole 18</a></li>
+
+				<!-- <li class="level-1"><a href="desktop/GolfCourseTours-1.html">Ocean Course</a></li>
+				<li class="level-1"><a href="desktop/GolfCourseTours-1.html">Cliff Course</a></li> -->
+			</ul>
+		</nav>
+	</div>
+
+	<div class="column_right_top">
+		<main class="body_content_container">
+			<section class="page_row">
+				<div class="section-wrapper">
+					<div class="heading_wrapper">
+						<h1>PEACOCK GAP GOLF CLUB - HOLE 1</h1>
+					</div>
+					<div class="paragraph_wrapper">
+						<p><img src="Lake_courses-edited.png" alt="" width="648px" height="" style= "text-align: center;">
+					</p>
+						<h4>Par 1</h4>
+						<p>The championship level course cultivates a true love for the game with year-round golf tournaments and a full calendar of events that unfold in an unparalleled setting. Enjoy gorgeous views of Marin County while playing on one of Northern California’s best heritage courses.</p>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+
+	<div class="column_right_bottom">
+		<main class="body_content_container">
+			<section class="page_row">
+				<div class="section-wrapper">
+					<div class="heading_wrapper">
+						<h1>PEACOCK GAP GOLF CLUB - HOLE 1</h1>
+					</div>
+					
+					<div class="container">
+  					<div class="slides">  
+    					<img src="golfclubweb-edited.jpg" style="width:80%">
+  					</div>
+
+  					<div class="slides">
+    					<img src="golfclubweb2-edited.jpg" style="width:80%">
+  					</div>
+    
+  					<a class="prev" onclick="plusSlides(-1)">❮</a>
+  					<a class="next" onclick="plusSlides(1)">❯</a>
+					</div>
+
+				</div>
+				
+			</section>
+		</main>
+	</div>
+
+</main>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</body>
+</html>
+
+
+
+
