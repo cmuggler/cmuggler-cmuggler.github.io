@@ -19,7 +19,6 @@ body {
 	background-repeat: repeat;
 	background-position: center center;
 	background-size: cover;
-	min-height: 70%px;
 	height: 430px;
 	position: relative;
 }
@@ -29,7 +28,7 @@ div {
 }
 
 main.body_container {
-    padding: 60px 30px 0px;
+    padding: 60px 30px;
 }
 
 body main nav.sub-nav ul li.heading {
@@ -73,6 +72,11 @@ ul li.level-2 a {
 	color: #fff;
 }
 
+.border-box {
+ margin: 0px;
+ padding: 5px;
+}
+
 .sub-nav{
   width: 250px;
   border: 5px solid #8ba9bf;
@@ -82,10 +86,6 @@ ul li.level-2 a {
 
 }
 
-.border-box {
- margin: 0px;
- padding: 5px;
-}
 .sub-nav ul {
 	border: 1px solid #778086;
 }
@@ -104,24 +104,8 @@ ul li.level-2 a {
   border-bottom: 1px solid #fff;
 }
 
-.sub-nav ul li.level-1 a .active {
-  background-color: #04AA6D;
-  color: white;
-}
-
 .sub-nav ul li.level-2 a:hover {
   border-bottom: 1px solid #fff;
-}
-
-.column {
-	float: left;
-}
-
-.left {
-	width: 20%;
-}
-.right {
-	width: 80%;
 }
 
 .body_container after {
@@ -130,8 +114,13 @@ ul li.level-2 a {
   clear: both;
 }
 
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
 .body_content_container {
-	width: 750px;
+	width: auto;
   border: 5px solid #d5e7f2;
   background-color: #d5e7f2;
   text-decoration: none;
@@ -174,7 +163,6 @@ h3 {
 
 .secnav-1 a {
 	text-align: center;
-  
   color: #778086;
   padding: 5px 8px;
   text-decoration: none;
@@ -199,6 +187,7 @@ h3 {
 p {
 	letter-spacing: 1px;
 }
+
 img {
 	display: block;
 	margin-left: auto;
@@ -208,64 +197,88 @@ img {
   filter: drop-shadow(5px 5px 5px #666666);
 }
 
-@media only screen and (max-width:800px) {
-  /* For tablets: */
-  .main {
-    width: 80%;
-    padding: 0px;
-  }
-  .right {
-    width: 100%;
-  }
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
 
-  @media only screen and (max-width:500px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
+@media (min-width: 700px) 
+.feature-area .feature-image {
+min-height: 400px;
+height: 400px; 
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
 }
 
 </style>
-
-<title>Page Title</title>
 </head>
 
 <body>
 <header>
-<div class="feature-area">
-	<div class="feature-image" style="background-image:url('golf-course-tours-picture-background.png')">
+	<div class="feature-area">
+		<div class="feature-image" style="background-image:url('golf-course-tours-picture-background.png')"></div>
+	</div>
 </header>
 <main class="body_container">
 
-	<div class="column left">
+	<div class="col-3 col-s-3 column-left">
 		<nav class="sub-nav">
 			<ul class="border-box">
 				<li class="heading">Golf Course Tours</li>
-				<li class="level-1"><a href="golf-course-tours-details.html">Lake Course</a></li>
+				<li class="level-1"><a href="desktop/GolfCourseTours-1.html">Lake Course</a></li>
 
-						<li class="level-2" ><a href="golf-course-tours-details-hole-1.html">Hole 1</a></li>
-						<li class="level-2" ><a href="golf-course-tours-details-hole-2.html">Hole 2</a></li>
-						<li class="level-2" ><a href="golf-course-tours-details-hole-3.html">Hole 3</a></li>
-						<li class="level-2" ><a href="golf-course-tours-details-hole-4.html">Hole 4</a></li>
-						<li class="level-2" ><a href="golf-course-tours-details-hole-5.html">Hole 5</a></li>
-						<li class="level-2" ><a href="golf-course-tours-details-hole-6.html">Hole 6</a></li>
-						<li class="level-2" ><a href="golf-course-tours-details-hole-7.html">Hole 7</a></li>
-						<li class="level-2" ><a href="golf-course-tours-details-hole-8.html">Hole 8</a></li>
-						<li class="level-2" ><a href="golf-course-tours-details-hole-9.html">Hole 9</a></li>
-						<li class="level-2" ><a href="golf-course-tours-details-hole-10.html">Hole 10</a></li>
-						<li class="level-2" ><a href="golf-course-tours-details-hole-11.html">Hole 11</a></li>
-						<li class="level-2" ><a href="golf-course-tours-details-hole-12.html">Hole 12</a></li>
-						<li class="level-2" ><a href="golf-course-tours-details-hole-13.html">Hole 13</a></li>
-						<li class="level-2" ><a href="golf-course-tours-details-hole-14.html">Hole 14</a></li>
-						<li class="level-2" ><a href="golf-course-tours-details-hole-15.html">Hole 15</a></li>
-						<li class="level-2" ><a href="golf-course-tours-details-hole-16.html">Hole 16</a></li>
-						<li class="level-2" ><a href="golf-course-tours-details-hole-17.html">Hole 17</a></li>
-						<li class="level-2" ><a href="golf-course-tours-details-hole-18.html">Hole 18</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-1.html">Hole 1</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-2.html">Hole 2</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-3.html">Hole 3</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-4.html">Hole 4</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-5.html">Hole 5</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-6.html">Hole 6</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-7.html">Hole 7</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-8.html">Hole 8</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-9.html">Hole 9</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-10.html">Hole 10</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-11.html">Hole 11</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-12.html">Hole 12</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-13.html">Hole 13</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-14.html">Hole 14</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-15.html">Hole 15</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-16.html">Hole 16</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-17.html">Hole 17</a></li>
+						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-18.html">Hole 18</a></li>
 			</ul>
 		</nav>
 	</div>
 
-	<div class="column right">
+	<div class="col-9 col-s-9column-right">
 		<main class="body_content_container">
 			<section class="page_row">
 				<div class="section-wrapper">
@@ -278,30 +291,30 @@ img {
 						<h3> Select a Course to Begin</h3>
 							<div class="secnav">
 								<div class="secnav-1">
-									<a href="golf-course-tours-details-hole-1.html">Hole 1</a>
-									<a href="golf-course-tours-details-hole-2.html">Hole 2</a>
-									<a href="golf-course-tours-details-hole-3.html">Hole 3</a>
-									<a href="golf-course-tours-details-hole-4.html">Hole 4</a>
-									<a href="golf-course-tours-details-hole-5.html">Hole 5</a>
-									<a href="golf-course-tours-details-hole-6.html">Hole 6</a>
-									<a href="golf-course-tours-details-hole-7.html">Hole 7</a>
-									<a href="golf-course-tours-details-hole-8.html">Hole 8</a>
-									<a href="golf-course-tours-details-hole-9.html">Hole 9</a>
+									<a href="desktop/golf-course-tours-details-hole-1.html">Hole 1</a>
+									<a href="desktop/golf-course-tours-details-hole-2.html">Hole 2</a>
+									<a href="desktop/golf-course-tours-details-hole-3.html">Hole 3</a>
+									<a href="desktop/golf-course-tours-details-hole-4.html">Hole 4</a>
+									<a href="desktop/golf-course-tours-details-hole-5.html">Hole 5</a>
+									<a href="desktop/golf-course-tours-details-hole-6.html">Hole 6</a>
+									<a href="desktop/golf-course-tours-details-hole-7.html">Hole 7</a>
+									<a href="desktop/golf-course-tours-details-hole-8.html">Hole 8</a>
+									<a href="desktop/golf-course-tours-details-hole-9.html">Hole 9</a>
 								</div>
 								<div class="secnav-2">	
-									<a href="golf-course-tours-details-hole-10.html">Hole 10</a>
-									<a href="golf-course-tours-details-hole-11.html">Hole 11</a>
-									<a href="golf-course-tours-details-hole-12.html">Hole 12</a>
-									<a href="golf-course-tours-details-hole-13.html">Hole 12</a>
-									<a href="golf-course-tours-details-hole-14.html">Hole 12</a>
-									<a href="golf-course-tours-details-hole-15.html">Hole 12</a>
-									<a href="golf-course-tours-details-hole-16.html">Hole 12</a>
-									<a href="golf-course-tours-details-hole-17.html">Hole 12</a>
-									<a href="golf-course-tours-details-hole-18.html">Hole 12</a>
+									<a href="desktop/golf-course-tours-details-hole-10.html">Hole 10</a>
+									<a href="desktop/golf-course-tours-details-hole-11.html">Hole 11</a>
+									<a href="desktop/golf-course-tours-details-hole-12.html">Hole 12</a>
+									<a href="desktop/golf-course-tours-details-hole-13.html">Hole 12</a>
+									<a href="desktop/golf-course-tours-details-hole-14.html">Hole 12</a>
+									<a href="desktop/golf-course-tours-details-hole-15.html">Hole 12</a>
+									<a href="desktop/golf-course-tours-details-hole-16.html">Hole 12</a>
+									<a href="desktop/golf-course-tours-details-hole-17.html">Hole 12</a>
+									<a href="desktop/golf-course-tours-details-hole-18.html">Hole 12</a>
 								</div>
 							</div>
-						<p><img src="Lake_courses-edited.png" alt="" width="648px" height="" style= "text-align: center;">
-					</p>
+						<img src="Lake_courses-edited.png" alt="" width="90%" height="" style= "text-align: center;">
+					
 
 					
 				</div>
