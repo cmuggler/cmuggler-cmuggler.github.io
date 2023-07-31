@@ -12,15 +12,13 @@
 
 body {
 	font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-size: 14px;
-	margin: 0;	
+	font-size: 14px;	
 }
 
 .feature-area .feature-image {
 	background-repeat: repeat;
 	background-position: center center;
 	background-size: cover;
-	min-height: 70%px;
 	height: 430px;
 	position: relative;
 }
@@ -30,7 +28,7 @@ div {
 }
 
 main.body_container {
-    padding: 60px 30px 0px;
+    padding: 60px 30px;
 }
 
 body main nav.sub-nav ul li.heading {
@@ -74,6 +72,11 @@ ul li.level-2 a {
 	color: #fff;
 }
 
+.border-box {
+ margin: 0px;
+ padding: 5px;
+}
+
 .sub-nav{
   width: 250px;
   border: 5px solid #8ba9bf;
@@ -83,10 +86,6 @@ ul li.level-2 a {
 
 }
 
-.border-box {
- margin: 0px;
- padding: 5px;
-}
 .sub-nav ul {
 	border: 1px solid #778086;
 }
@@ -105,24 +104,8 @@ ul li.level-2 a {
   border-bottom: 1px solid #fff;
 }
 
-.sub-nav ul li.level-1 a .active {
-  background-color: #04AA6D;
-  color: white;
-}
-
 .sub-nav ul li.level-2 a:hover {
   border-bottom: 1px solid #fff;
-}
-
-.column {
-	float: left;
-}
-
-.left {
-	width: 20%;
-}
-.right {
-	width: 80%;
 }
 
 .body_container after {
@@ -131,8 +114,13 @@ ul li.level-2 a {
   clear: both;
 }
 
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
 .body_content_container {
-	width: 750px;
+	width: auto;
   border: 5px solid #d5e7f2;
   background-color: #d5e7f2;
   text-decoration: none;
@@ -143,17 +131,9 @@ ul li.level-2 a {
 	padding: 10px 20px;
 	border: 1px solid #fff;	
 	color: #778086;
+
 }
 .heading_wrapper h1{
-font-size: 24px;
-line-height: 22px;
-letter-spacing: 2px;
-padding-bottom: 26px;
-border-bottom: 1px solid #fff;
-text-align: center;
-}
-
-.gallery_button h1{
 font-size: 24px;
 line-height: 22px;
 letter-spacing: 2px;
@@ -171,6 +151,7 @@ max-width:1160px;
 h3 {
 	text-align: center;
 	font-size: 20px;
+	padding-top: 6px;
 }
 
 h4 {
@@ -186,7 +167,6 @@ h4 {
 
 .secnav-1 a {
 	text-align: center;
-  
   color: #778086;
   padding: 5px 8px;
   text-decoration: none;
@@ -211,50 +191,27 @@ h4 {
 p {
 	letter-spacing: 1px;
 }
+
 img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 0px;
-	vertical-align: middle;
 	-webkit-filter: drop-shadow(5px 5px 5px #666666);
   filter: drop-shadow(5px 5px 5px #666666);
 }
 
-.column_right_top {
-	padding: 0px 300px;
+img {
+  vertical-align: middle;
 }
-
-.column_right_bottom {
-	padding: 30px 300px;
-}
-
-
-@media only screen and (max-width:800px) {
-  /* For tablets: */
-  .main {
-    width: 80%;
-    padding: 0px;
-  }
-  .right {
-    width: 100%;
-  }
-
-  @media only screen and (max-width:500px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
-}
-
 
 /* Position the image container (needed to position the left and right arrows) */
-.section-wrapper .container {
+.container {
   position: relative;
 }
 
 /* Hide the images by default */
-.container {
+.slides {
   display: none;
 }
 
@@ -264,7 +221,7 @@ img {
 }
 
 /* Next & previous buttons */
-.container .prev,
+.prev,
 .next {
   cursor: pointer;
   position: absolute;
@@ -275,7 +232,7 @@ img {
   color: white;
   font-weight: bold;
   font-size: 20px;
-  border-radius: 0 6px 6px 0;
+  border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
 }
@@ -283,26 +240,74 @@ img {
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 6px 0 0 6px;
+  border-radius: 3px 0 0 3px;
 }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media (min-width: 700px) 
+.feature-area .feature-image {
+min-height: 400px;
+height: 400px; 
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
 </style>
-
-
-<title>Page Title</title>
 </head>
 
 <body>
 <header>
-<div class="feature-area">
-	<div class="feature-image" style="background-image:url('golf-course-tours-picture-background.png')">
+	<div class="feature-area">
+		<div class="feature-image" style="background-image:url('golf-course-tours-picture-background.png')"></div>
+	</div>
 </header>
 <main class="body_container">
 
-	<div class="column left">
+	<div class="col-3 col-s-3 column-left">
 		<nav class="sub-nav">
 			<ul class="border-box">
 				<li class="heading">Golf Course Tours</li>
-				<li class="level-1"><a href="golf-course-tours-details.html">Lake Course</a></li>
+				<li class="level-1"><a href="desktop/GolfCourseTours-1.html">Lake Course</a></li>
 
 						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-1.html">Hole 1</a></li>
 						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-2.html">Hole 2</a></li>
@@ -322,40 +327,36 @@ img {
 						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-16.html">Hole 16</a></li>
 						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-17.html">Hole 17</a></li>
 						<li class="level-2" ><a href="desktop/golf-course-tours-details-hole-18.html">Hole 18</a></li>
-
-				<!-- <li class="level-1"><a href="desktop/GolfCourseTours-1.html">Ocean Course</a></li>
-				<li class="level-1"><a href="desktop/GolfCourseTours-1.html">Cliff Course</a></li> -->
 			</ul>
 		</nav>
 	</div>
 
-	<div class="column_right_top">
+	<div class="col-9 col-s-9column-right">
 		<main class="body_content_container">
 			<section class="page_row">
 				<div class="section-wrapper">
 					<div class="heading_wrapper">
-						<h1>PEACOCK GAP GOLF CLUB - HOLE 1</h1>
+						<h1>PEACOCK GAP GOLF CLUB</h1>
 					</div>
 					<div class="paragraph_wrapper">
-						<p><img src="Lake_courses-edited.png" alt="" width="648px" height="" style= "text-align: center;">
-					</p>
+						<img src="Lake_courses-edited.png" alt="" width="90%" height="" style= "text-align: center;">
 						<h4>Par 1</h4>
 						<p>The championship level course cultivates a true love for the game with year-round golf tournaments and a full calendar of events that unfold in an unparalleled setting. Enjoy gorgeous views of Marin County while playing on one of Northern California’s best heritage courses.</p>
-					</div>
+					</div>					
 				</div>
 			</section>
 		</main>
 	</div>
 
-	<div class="column_right_bottom">
+	<div class="col-9 col-s-9column-right">
 		<main class="body_content_container">
 			<section class="page_row">
 				<div class="section-wrapper">
 					<div class="heading_wrapper">
 						<h1>PEACOCK GAP GOLF CLUB - HOLE 1</h1>
 					</div>
-					
-					<div class="container">
+
+					<div class="container" style="padding: 20px 0px">
   					<div class="slides">  
     					<img src="golfclubweb-edited.jpg" style="width:80%">
   					</div>
@@ -366,15 +367,16 @@ img {
     
   					<a class="prev" onclick="plusSlides(-1)">❮</a>
   					<a class="next" onclick="plusSlides(1)">❯</a>
-					</div>
-
+					</div>	
+									
 				</div>
-				
 			</section>
 		</main>
 	</div>
 
+
 </main>
+
 
 <script>
 let slideIndex = 1;
