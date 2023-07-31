@@ -19,7 +19,6 @@ body {
 	background-repeat: repeat;
 	background-position: center center;
 	background-size: cover;
-	min-height: 70%px;
 	height: 430px;
 	position: relative;
 }
@@ -29,7 +28,7 @@ div {
 }
 
 main.body_container {
-    padding: 60px 30px 0px;
+    padding: 60px 30px;
 }
 
 body main nav.sub-nav ul li.heading {
@@ -55,7 +54,6 @@ body main nav.sub-nav ul li.level-1 {
 body main nav.sub-nav ul li.level-1 a {
 	text-decoration: none;
 	color: #fff;
-	
 }
 body main nav.sub-nav ul li.level-2 {
 	font-size: 14px;
@@ -64,6 +62,18 @@ body main nav.sub-nav ul li.level-2 {
 	text-indent: -1em;
   line-height: 1.5;
   padding-left: 40px;
+  text-decoration: none;
+	color: #fff;
+}
+
+ul li.level-2 a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.border-box {
+ margin: 0px;
+ padding: 5px;
 }
 
 .sub-nav{
@@ -75,10 +85,6 @@ body main nav.sub-nav ul li.level-2 {
 
 }
 
-.border-box {
- margin: 0px;
- padding: 5px;
-}
 .sub-nav ul {
 	border: 1px solid #778086;
 }
@@ -97,20 +103,8 @@ body main nav.sub-nav ul li.level-2 {
   border-bottom: 1px solid #fff;
 }
 
-.sub-nav ul li.level-1 a .active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-.column {
-	float: left;
-}
-
-.left {
-	width: 20%;
-}
-.right {
-	width: 80%;
+.sub-nav ul li.level-2 a:hover {
+  border-bottom: 1px solid #fff;
 }
 
 .body_container after {
@@ -119,8 +113,13 @@ body main nav.sub-nav ul li.level-2 {
   clear: both;
 }
 
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
 .body_content_container {
-	width: 750px;
+	width: auto;
   border: 5px solid #d5e7f2;
   background-color: #d5e7f2;
   text-decoration: none;
@@ -158,24 +157,33 @@ h3 {
   overflow: hidden;
   text-align: center;
   float: none;
+  letter-spacing: 0.25px;
 }
 
-.secnav a {
+.secnav-1 a {
 	text-align: center;
-  text-transform: uppercase;
+  
   color: #778086;
-  padding: 0px 16px;
+  padding: 5px 8px;
   text-decoration: none;
+  display: inline-block;  
 }
 
-.secnav a:hover {
+.secnav-2 a {
+	text-align: center;
+  color: #778086;
+  padding: 5px 8px;
+  text-decoration: none;
+  display: inline-block; 
+}
+
+.secnav :hover {
   color: white;
 }
 
 .secnav-right {
   float: right;
 }
-
 p {
 	letter-spacing: 1px;
 }
@@ -189,60 +197,91 @@ img {
   filter: drop-shadow(5px 5px 5px #666666);
 }
 
-@media only screen and (max-width:800px) {
-  /* For tablets: */
-  .main {
-    width: 80%;
-    padding: 0px;
-  }
-  .right {
-    width: 100%;
-  }
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
 
-  @media only screen and (max-width:500px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
+@media (min-width: 700px) 
+.feature-area .feature-image {
+min-height: 400px;
+height: 400px; 
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
 }
 
 </style>
-
-<title>Page Title</title>
 </head>
 
 <body>
 <header>
-<div class="feature-area">
-	<div class="feature-image" style="background-image:url('golf-course-tours-picture-background.png')">
+	<div class="feature-area">
+		<div class="feature-image" style="background-image:url('golf-course-tours-picture-background.png')"></div>
+	</div>
 </header>
+
 <main class="body_container">
 
-	<div class="column left">
+	<div class="col-3 col-s-3 column-left">
 		<nav class="sub-nav">
+
 			<ul class="border-box">
 				<li class="heading">Golf Course Tours</li>
 				<li class="level-1"><a href="golf-course-tours-details.html">Lake Course</a></li>
 			</ul>
+
 		</nav>
 	</div>
 
-	<div class="column right">
+	<div class="col-9 col-s-9column-right">
 		<main class="body_content_container">
 			<section class="page_row">
+
 				<div class="section-wrapper">
+
 					<div class="heading_wrapper">
 						<h1>PEACOCK GAP GOLF CLUB</h1>
 					</div>
+
 					<div class="paragraph_wrapper">
 						<p>Rated "Best of the County" by Marin Magazine and located in San Rafael, 25 miles north of San Francisco in the heart of Marin County, Peacock Gap Golf Club has been a pillar of the golf community for decades. The championship level course cultivates a true love for the game with year-round golf tournaments and a full calendar of events that unfold in an unparalleled setting. Enjoy gorgeous views of Marin County while playing on one of Northern California’s best heritage courses.</p>
 						<p>Close to the city while firmly rooted in the tranquility of the country, Peacock Gap blends a commitment to tradition with state-of-the-art practice facilities, cutting-edge instruction, and a modern take on this fun and challenging game. Take your game to the next level at Peacock Gap Golf Club.</p>
 						<h3> Select a Course to Begin</h3>
-						<p><img src="all_courses-edited.png" alt="" width="648px" height="" style= "text-align: center;">
-					</p>
+						<img src="all_courses-edited.png" alt="" width="90%" style= "text-align: center;">
+						
+					</div>
 
-					
 				</div>
+
 			</section>
 		</main>
 	</div>
