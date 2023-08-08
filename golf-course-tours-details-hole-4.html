@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Peacock Gap Golf Club</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;	
+}
+
+.feature-area .feature-image {
+	background-repeat: repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 430px;
+	position: relative;
+}
+
+div {
+	display: block;
+}
+
+main.body_container {
+    padding: 60px 30px;
+}
+
+body main nav.sub-nav ul li.heading {
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border-bottom: 1px solid #778086;
+	margin: 10px 0;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+body main nav.sub-nav ul li.level-1 {
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin: 10px 0;
+	padding: 0px 10px;	
+}
+
+body main nav.sub-nav ul li.level-1 a {
+	text-decoration: none;
+	color: #fff;
+	text-shadow: black 0px -1px 0px;
+}
+body main nav.sub-nav ul li.level-2 {
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 4px 0px 4px 20px;
+	text-indent: -1em;
+  line-height: 1.5;
+  padding-left: 40px;
+  text-decoration: none;
+	color: #fff;
+}
+
+ul li.level-2 a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.border-box {
+ margin: 0px;
+ padding: 5px;
+}
+
+.sub-nav{
+  width: 250px;
+  border: 5px solid #8ba9bf;
+  background-color: #8ba9bf;
+  text-decoration: none;
+	color: #fff;
+
+}
+
+.sub-nav ul {
+	border: 1px solid #778086;
+}
+
+.sub-nav ul {
+  background-color: #8ba9bf;
+  color: #fff;
+  display: block;
+  padding-left: 10px;
+  text-decoration: none;
+  list-style: none;  
+}
+
+.sub-nav ul li.level-1 a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.sub-nav ul li.level-2 a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.body_container after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.body_content_container {
+	width: auto;
+  border: 5px solid #d5e7f2;
+  background-color: #d5e7f2;
+  text-decoration: none;
+	color: #fff;
+
+}
+.page_row {
+	padding: 10px 20px;
+	border: 1px solid #fff;	
+	color: #778086;
+
+}
+.heading_wrapper h1{
+font-size: 24px;
+line-height: 22px;
+letter-spacing: 2px;
+padding-bottom: 26px;
+border-bottom: 1px solid #fff;
+text-align: center;
+}
+
+main {
+margin-right: auto; 
+margin-left: auto; 
+max-width:1160px; 
+}
+
+h3 {
+	text-align: center;
+	font-size: 20px;
+	padding-top: 6px;
+}
+
+h4 {
+	text-align: center;
+}
+
+.body_content_container .page_row .section-wrapper .paragraph_wrapper .secnav .secnav-1 .circle {
+  overflow: hidden;
+  text-align: center;
+  float: none;
+  letter-spacing: 0.25px;
+}
+
+
+.body_content_container .page_row .section-wrapper .paragraph_wrapper .secnav .secnav-1 .info {
+  overflow: hidden;
+  text-align: center;
+  float: none;
+  letter-spacing: 0.25px;
+}
+
+.body_content_container .page_row .section-wrapper .paragraph_wrapper .secnav .secnav-1 .info a:hover {
+  color: #778086;
+}
+
+.secnav-1 a {
+	text-align: center;
+  color: #778086;
+  padding: 5px 8px;
+  text-decoration: none;
+  display: inline-block;  
+}
+
+.secnav-2 a {
+	text-align: center;
+  color: #778086;
+  padding: 5px 8px;
+  text-decoration: none;
+  display: inline-block; 
+}
+
+.secnav :hover {
+  color: white;
+}
+
+.secnav-right {
+  float: right;
+}
+
+.circleBase {
+  border-radius: 50%;
+}
+
+.circle1 {
+  width: 8px;
+  height: 8px;
+  padding: 10px;
+  margin: 10px;
+  background: #FF0000;
+  display: inline-block;
+  -webkit-filter: drop-shadow(1px 1px 1px #666666);
+  filter: drop-shadow(1px 1px 1px #666666);
+}
+
+.circle2 {
+  width: 8px;
+  height: 8px;
+  padding: 10px;
+  margin: 10px;
+  background: #fff;
+  display: inline-block;
+  -webkit-filter: drop-shadow(1px 1px 1px #666666);
+  filter: drop-shadow(1px 1px 1px #666666);
+}
+
+.circle3 {
+  width: 8px;
+  height: 8px;
+  padding: 10px;
+  margin: 10px;
+  background: #00008B;
+  display: inline-block;
+  -webkit-filter: drop-shadow(1px 1px 1px #666666);
+  filter: drop-shadow(1px 1px 1px #666666);
+}
+
+.circle4 {
+  width: 8px;
+  height: 8px;
+  padding: 10px;
+  margin: 10px;
+  background: #000;
+  display: inline-block;
+  -webkit-filter: drop-shadow(1px 1px 1px #666666);
+  filter: drop-shadow(1px 1px 1px #666666);
+}
+
+p {
+	letter-spacing: 1px;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 0px;
+	-webkit-filter: drop-shadow(5px 5px 5px #666666);
+  filter: drop-shadow(5px 5px 5px #666666);
+  width: 80%;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.slides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.paragraph_wrapper a {
+	text-decoration: none;
+	color: #778086;
+}
+
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+.feature-area .feature-image {
+min-height: 400px;
+height: 400px; 
+}
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+</style>
+</head>
+
+<body>
+<header>
+	<div class="feature-area">
+		<div class="feature-image" style="background-image:url('golf-course-tours-picture-background.png')"></div>
+	</div>
+</header>
+<main class="body_container">
+
+	<div class="col-3 col-s-3 column-left">
+		<nav class="sub-nav">
+			<ul class="border-box">
+				<li class="heading">Golf Course Tours</li>
+				<li class="level-1"><a href="golf-course-tours-details.html">Peacock Gap Golf Club</a></li>
+
+						<li class="level-2" ><a href="golf-course-tours-details-hole-1.html">Hole 1</a></li>
+						<li class="level-2" ><a href="golf-course-tours-details-hole-2.html">Hole 2</a></li>
+						<li class="level-2" ><a href="golf-course-tours-details-hole-3.html">Hole 3</a></li>
+						<li class="level-2" ><a href="golf-course-tours-details-hole-4.html">Hole 4</a></li>
+						<li class="level-2" ><a href="golf-course-tours-details-hole-5.html">Hole 5</a></li>
+						<li class="level-2" ><a href="golf-course-tours-details-hole-6.html">Hole 6</a></li>
+						<li class="level-2" ><a href="golf-course-tours-details-hole-7.html">Hole 7</a></li>
+						<li class="level-2" ><a href="golf-course-tours-details-hole-8.html">Hole 8</a></li>
+						<li class="level-2" ><a href="golf-course-tours-details-hole-9.html">Hole 9</a></li>
+						<li class="level-2" ><a href="golf-course-tours-details-hole-10.html">Hole 10</a></li>
+						<li class="level-2" ><a href="golf-course-tours-details-hole-11.html">Hole 11</a></li>
+						<li class="level-2" ><a href="golf-course-tours-details-hole-12.html">Hole 12</a></li>
+						<li class="level-2" ><a href="golf-course-tours-details-hole-13.html">Hole 13</a></li>
+						<li class="level-2" ><a href="golf-course-tours-details-hole-14.html">Hole 14</a></li>
+						<li class="level-2" ><a href="golf-course-tours-details-hole-15.html">Hole 15</a></li>
+						<li class="level-2" ><a href="golf-course-tours-details-hole-16.html">Hole 16</a></li>
+						<li class="level-2" ><a href="golf-course-tours-details-hole-17.html">Hole 17</a></li>
+						<li class="level-2" ><a href="golf-course-tours-details-hole-18.html">Hole 18</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="col-9 col-s-9column-right">
+		<div class="body_content_container">
+			<section class="page_row">
+				<div class="section-wrapper">
+					<div class="heading_wrapper">
+						<h1>PEACOCK GAP GOLF CLUB</h1>
+					</div>
+					<div class="paragraph_wrapper">
+						<img src="PeacockGap_BenchCraftCompany_hole4.png" alt="" style= "text-align: center;">
+
+						<div class="secnav">
+								<div class="secnav-1">
+									<div class="circle">
+										<div class="circleBase circle1"></div>
+										<div class="circleBase circle2"></div>
+										<div class="circleBase circle3"></div>
+										<div class="circleBase circle4"></div>
+									</div>
+									<div class="info">
+										<a href="">403</a>
+										<a href="">488</a>
+										<a href="">501</a>
+										<a href="">505</a>
+									</div>
+								</div>
+						</div>
+
+						<h4>Playing Tips</h4>
+						<p>Sharp dogleg left Par 4 that will immediately put your game to the test.Long hitters may attempt to cut the corner, but could risk landing in the fairway bunker or creek beyong the fairway.</p>
+						<a href="https://www.benchcraftcompany.com/products/course-guides" style="font-size: 10px" ><i>Maps by Bench Craft Company</i></a>
+					</div>					
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<div class="col-9 col-s-9column-right">
+		<div class="body_content_container">
+			<section class="page_row">
+				<div class="section-wrapper">
+						<div class="heading_wrapper">
+						<h1>PEACOCK GAP GOLF CLUB - HOLE 4</h1>
+						</div>
+
+					<div class="container" style="padding: 20px 0px">
+  					<div class="slides">  
+    					<img src="PeacockGapHolepictures-H4a.jpg" alt="" style="width:80%">
+  					</div>
+
+  					<div class="slides">
+    					<img src="PeacockGapHolepictures-H4b.jpg" alt="" style="width:80%">
+  					</div>
+
+  					<div class="slides">
+    					<img src="PeacockGapHolepictures-H4c.jpg" alt="" style="width:80%">
+  					</div>
+
+  					<div class="slides">
+    					<img src="PeacockGapHolepictures-H4d.jpg" alt="" style="width:80%">
+  					</div>
+    
+  					<a class="prev" onclick="plusSlides(-1)">❮</a>
+  					<a class="next" onclick="plusSlides(1)">❯</a>
+					</div>
+									
+				</div>
+			</section>
+		</div>
+	</div>
+
+
+</main>
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</body>
+</html>
+
+
+
+
